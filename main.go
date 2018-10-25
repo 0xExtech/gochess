@@ -13,11 +13,11 @@ func main() {
     fmt.Printf("%v %T\n", chess.PiecesList[23], chess.PiecesList[23])
     fmt.Printf("%v %T\n", chess.PiecesList[31], chess.PiecesList[31])
 
-    fmt.Printf("%T\n", chess.PiecesList[chess.Board[64]])
     fmt.Printf("%T\n", chess.PiecesList[chess.Board[63]])
     fmt.Printf("%T\n", chess.PiecesList[chess.Board[62]])
+    fmt.Printf("%T\n", chess.PiecesList[chess.Board[61]])
 
     fmt.Printf("%T\n", chess.PiecesList[chess.Board[3]])
     fmt.Printf("%T\n", chess.PiecesList[chess.Board[15]])
-    fmt.Printf("%T\n", chess.PiecesList[chess.Board[8]])
+    fmt.Printf("%T\n", chess.PiecesList[chess.Board[7]])
 }
