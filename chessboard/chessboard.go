@@ -3,7 +3,7 @@ package chessboard
 import . "gochess/piece"
 
 type ChessBoard struct {
-	Board   [64]int
+	Board   [65]int
 	PiecesList [33]Piece
 }
 
@@ -51,10 +51,26 @@ func InitializePiecesList() [33]Piece {
     return pieces
 }
 
-func InitializeBoard() [64]int {
-    var board   [64]int
+func InitializeBoard() [65]int {
+    var board   [65]int
 
-    
+    // White Pieces
+    for i := 1; i <=8; i++ {
+        board[i] = i
+    }
+    // White Pawns
+    for i:= 9; i <= 16; i++ {
+        board[i] = i
+    }
+
+    // Black Pieces
+    for i, j := 57, 17; i <= 64; i, j = i + 1, j + 1 {
+        board[i] = j
+    }
+    // Black Pawns
+    for i, j := 49, 25; i <= 56; i, j = i + 1, j + 1 {
+        board[i] = j
+    }
 
     return board
 }

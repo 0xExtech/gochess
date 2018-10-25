@@ -5,6 +5,8 @@
 *.so
 *.dylib
 
+gochess
+
 # Test binary, build with `go test -c`
 *.test
 
